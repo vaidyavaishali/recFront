@@ -13,7 +13,7 @@ const Login = () => {
             if (res.status === 200) {
                 window.localStorage.setItem("token", res.data.token)
                 console.log(res.data.token)
-                navigate("/showrecipe")
+                navigate("/post")
             }
         }).catch((e) => {
             console.log(e)

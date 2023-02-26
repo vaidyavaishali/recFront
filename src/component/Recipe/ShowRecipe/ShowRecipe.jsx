@@ -27,9 +27,9 @@ const ShowRecipe = () => {
                     <input type="text" placeholder="search recipe" style={{ width: "300px", height: "30px", margin: "auto" }} />
                     <Link to="/create"><p>New</p></Link>
                 </header>
-                <div>
-                    
-                </div>
+                {/* <div>
+                    {recipe.map()}
+                </div> */}
             </div>
 
         </>
