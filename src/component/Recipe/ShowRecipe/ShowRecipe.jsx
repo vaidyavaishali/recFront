@@ -1,5 +1,6 @@
 import axios from "axios"
 import "./showRecipe.css"
+
 // import './createRecipe.css'
 import { useEffect, useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
@@ -47,8 +48,8 @@ const ShowRecipe = () => {
 
 
                 <div>
-                    <input type="text" placeholder="search recipe" style={{ width: "80%", height: "6vh", margin: "4% 0 0 7%", paddingLeft: "3%" }} onChange={Search} />
-                    <div>
+                    <input type="text" placeholder="search recipe" style={{ width: "30%", height: "6vh", margin: "4% 0 0 30%", paddingLeft: "3%" }} onChange={Search} />
+                    <div style={{ margin: "0% 0 0 17%", paddingLeft: "3%" }}>
                         <Link to="/create">
                             <span>
                                 <img src="https://th.bing.com/th/id/OIP.EDPzpx2bnQXnn-JvSnSxOwHaGU?w=192&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" srcset="" width="10%" height="35vh" style={{ margin: "3% 0 0 19%" }} />
@@ -63,7 +64,7 @@ const ShowRecipe = () => {
 
                 </div>
 
-                <div>
+                <div style={{display:"flex", width:"100%", margin:"2%", flexWrap:"wrap"}}>
                     {filter_recipe.map((items, i) => {
                         return (
                             <div id="main-container">
